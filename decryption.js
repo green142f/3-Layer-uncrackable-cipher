@@ -1,0 +1,111 @@
+
+function decryption(){
+	var encryptedmessage = prompt("what is your encrypted message?");
+	var encryptedkey = prompt("what is your key?")
+	encryptedkey.split("");
+	encryptedmessage.split("")
+	for(var i = 0;i<encryptedkey.length;i++){
+		if(encryptedmessage[i] == ","){
+			encryptedmessage.splice(i,1);
+		}
+	}
+	
+}
+
+
+
+  // if(randomincrement == )
+  // keyss = keyss.split(",");
+  // for(var i = 0;i<keyss.length;i++){
+  //   if(keyss[i] == ""){
+  //     keyss.splice(i,1)
+  //     i = i-1
+  //   }
+  // }
+  // console.log(keyss)
+  // for(var i = 0;i<keyss.length;i++){
+  //   console.log(keyss[i])
+  //   if(isNaN(keyss[i]) == true){
+  //     indexkeys.push(i);
+
+  //   }
+  // }
+  // for(var i = 0;i<indexkeys.length;i++){
+  //   console.log(indexkeys)
+  //   console.log(keyss.length)
+  //   console.log(indexkeys.length)
+  //   console.log("hi my duddee")
+  //   console.log(i === keyss.length - 1)
+
+  //   if(i == input.length-1){
+  //     console.log("adfkljadfkladjfkladjlkf")
+      
+  //     var currentset = input.splice(parseInt(indexkeys[i]),parseInt(keyss.length)-parseInt(indexkeys[i]))
+  //     console.log(currentset + "!!!!!!!!!!!!!!!!!")
+  //   }else{
+  //     var currentset = input.splice(parseInt(indexkeys[i]),parseInt(keyss.length)-parseInt(indexkeys[i]))
+  //     console.log(currentset)
+
+
+  //     console.log(keyss[parseInt(i)])
+  //     console.log("akdlfjad;lkfja;ldkjf;lakdjf;lkadjfl;kj")
+  //      var currentset = keyss.splice(parseInt(indexkeys[i]),parseInt(indexkeys[i+1])-parseInt(indexkeys[i]))
+  //      if(keyss[parseInt(i)] == "R"){
+  //        currentset.splice(0,1)
+  //      }else if(keyss[parseInt(i)]== "S"){
+  //        console.log("hi!!!!!!!!!!!")
+  //        currentset.splice(0,1)
+  //        for(var b = 0;b<input.length;b++){
+  //          var currentcurrentset = input.splice(0,parseInt(currentset[0]));
+  //          currentset.splice(0,1)
+  //          if(currentset[1] == 0){
+  //            var currency = ciphers(currentcurrentset,parseInt(currentset[0]))
+  //            outputtings.push(currency)
+  //            console.log(outputtings)
+             
+  //          }else{
+            
+  //           var currency = ciphers(currentcurrentset,parseInt(currentset[0])-parseInt(currentset[0])-parseInt(currentset[0]));
+  //           outputtings.push(currency)
+  //           console.log(outputtings)
+  //          }
+           
+
+  //        }
+  //      }else if(keyss[parseInt(i)]== "C"){
+  //        console.log("I'm in C!")
+  //        currentset.splice(0,1)
+  //        console.log(currentset)
+  //        console.log(currentset[0])
+  //        console.log(parseInt(currentset[0])-parseInt(currentset[0])-parseInt(currentset[0]))
+  //        console.log(currentset + "ldafkjadlkfjadlfj")
+  //        outputting = ciphers(input,parseInt(currentset[0])-parseInt(currentset[0])-parseInt(currentset[0]))
+  //        console.log(outputting)
+
+  //      }
+  //   }
+
+  //     // if(b = parseInt(indexkeys[i])){
+  //     //   if((keyss[b]) == "C"){
+  //     //     currentfunction = "cipher()"
+  //     //     var currentset = keyss.splice(b,parseInt(indexkeys[i+1])-parseInt(indexkeys[i]))
+  //     //   }else if(keyss[b] == "S"){
+  //     //     currentfunction = "switchcipher()"
+  //     //     var currentset = keyss.splice(b,parseInt(indexkeys[i+1])-parseInt(indexkeys[i]))
+  //     //   }else if(keyss[b] == "R"){
+  //     //     currentfunction = "randomstring()"
+  //     //     var currentset = keyss.splice(b,parseInt(indexkeys.length)-parseInt(indexkeys[i]))
+  //     //   }
+  //     // }else{
+        
+
+
+
+
+
+
+
+
+  //     // }
+
+  //   }
