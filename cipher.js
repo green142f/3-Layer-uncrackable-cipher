@@ -31,20 +31,15 @@ if(decryption == "decrypt"){
     }
   }
   keys.join();
-  console.log(keys)
   for(var i = keys.length-1;i>-1;i--){
     if(isNaN(keys[i]) == true){
-      console.log("whatt")
       keyss.push(keys.splice(i,keys.length-i+1))
 
     }else{
       keys[i] = parseInt(keys[i])
     }
   }
-  console.log(keys)
-  console.log("hi")
   keys = keyss;
-  console.log(keys)
 
   for(var i = 0;i<keys.length;i++){
     var current = keys[i][0];
@@ -53,36 +48,17 @@ if(decryption == "decrypt"){
       
 
     }else if(current == "S"){
-      console.log("whef")
       keys[i].splice(0,2);
       var lols  = keys[i].length/2+2
       for(var b = 0;b<a.length+1;b++){
-        console.log(a.length)
-        console.log(b + "g")
-        console.log(keys[i].length/2-1)
         var currentpart = a.split("").splice(0,keys[i][1])
 
         var currentkey = keys[i].splice(0,2);
-        console.log(currentkey)
-        console.log(keys[i])
-        console.log(currentpart + "bruh")
-        console.log(currentkey[0]-currentkey[0]-currentkey[0])
         if(currentkey[0] >0){
-          b =ciphers(currentpart,currentkey[0]-currentkey[0]-currentkey[0])
-          console.log("poo")
-          console.log(newouts)
-          console.log(b + "yo")
-          console.log(isNaN(newouts))
         }else{
           
           b =ciphers(currentpart,currentkey[0]-currentkey[0]-currentkey[0])
-          console.log(b + "yo")
-          console.log(isNaN(newouts))
         }
-        console.log("I'm here!")
-        console.log(keys.length)
-        console.log(b)
-        console.log(keys[i].length/2+1)
 
       }
 
@@ -199,7 +175,6 @@ function cipher(inputs){
   var rand = randomincrement
   while(randomincrement > 26){
           randomincrement = randomincrement-26
-          console.log("I'm going through a for loop")
         }
   for(var i = 0;i<newInput.length;i++){
     for(var z = 0;z<extra.length;z++){
@@ -214,8 +189,6 @@ function cipher(inputs){
     }else{
       for(var b = 0;b<one.length;b++){
       if(newInput[i] === one[b]){
-        console.log(newInput[i],one[b])
-        console.log(randomincrement)
         while(randomincrement >= 25){
           randomincrement = randomincrement-25
         }
@@ -240,27 +213,21 @@ function cipher(inputs){
     
   }
   key.push("C");
-  console.log(key)
   key.push(rand)
   return(output)
 }
 function run(){
   output = cipher(input);
-  console.log(output)
   key = key.join()
   switchcipher(output)
   randomstring(newout)
-  console.log(newouts)
   key = key.join();
-  console.log(key)
 }
 
 
 function switchcipher(input){
   key = key.split("")
   key.push("S")
-  console.log("switchcipher!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-  console.log(input)
   var newSplit = input.split("")
   var randomnumber = 0;
   if(isPrime(input.length) == false){
@@ -285,17 +252,13 @@ function switchcipher(input){
     if(newrandomnumber == 0){
       increments = verynewrandomnumber-verynewrandomnumber-verynewrandomnumber
       outputs = ciphers(splitpart,increments)
-      console.log(splitpart)
-      console.log(outputs,splitpart)
       finaloutput.push(outputs)
 
     }else{
-            console.log(splitpart)
 
       outputs = ciphers(splitpart,verynewrandomnumber)
       finaloutput.push(outputs)
       increments = verynewrandomnumber
-      console.log(outputs,splitpart)
       
     }
     key.push(increments)
@@ -315,16 +278,11 @@ function isPrime(value) {
 
 function ciphers(inputs,increment){
   output = ""
-  console.log("im at ciphers")
   var randomincrement = parseInt(increment);
-  console.log(randomincrement)
   var newInput = inputs
-  console.log(newInput)
-  console.log("poopsd" +newInput + "hiiisi")
   for(var i = 0;i<newInput.length;i++){
     for(var b = 0;b<one.length;b++){
       if(newInput[i] === one[b]){
-        console.log("what is this")
         
         while(randomincrement > 25){
           randomincrement = randomincrement-25
@@ -332,8 +290,6 @@ function ciphers(inputs,increment){
         while(randomincrement < -25){
           randomincrement = randomincrement+25
         }
-        console.log(randomincrement + "poose")
-        console.log("l")
         if(i+randomincrement > 25){ 
           var difference = i+randomincrement-25
           newout = newout+two[difference]
@@ -347,19 +303,15 @@ function ciphers(inputs,increment){
       }
     }
   }
-  console.log("here" + newout)
   return(newout)
 }
 function randomstring(input){
-  console.log("randomcipher!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
   newInput = input.split("");
   stringrandom = stringrandom.split("")
   var randomincrement = Math.ceil(Math.random()*99)
   for(var i = 0;i< newInput.length;i++){
     for(var b = 0;b<stringrandom.length;b++){
       if(newInput[i] === stringrandom[b]){
-        console.log(newInput[i],stringrandom[b])
-        console.log(randomincrement)
         while(randomincrement >= 25){
           randomincrement = randomincrement-25
         }
@@ -395,14 +347,11 @@ String.prototype.shuffle = function () {
 
 function randomstrings(input,increment){
   newouts = ""
-  console.log("randomcipher!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
   newInput = input
   var randomincrement = increment
   for(var i = 0;i< newInput.length;i++){
     for(var b = 0;b<stringrandom.length;b++){
       if(newInput[i] === stringrandom[b]){
-        console.log(newInput[i],stringrandom[b])
-        console.log(randomincrement)
         while(randomincrement < -25){
           randomincrement = randomincrement+25
         }
