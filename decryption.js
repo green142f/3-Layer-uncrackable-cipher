@@ -50,6 +50,8 @@ function my_decryption(){
 		}else if(currentkey = "S"){
 
 		}else if(currentkey == "C"){
+			C(parseInt(letterkeys[i][1]),encryptedmessage)
+			console.log(encryptedmessage)
 
 		}
 	}
@@ -57,6 +59,40 @@ function my_decryption(){
 
 
 function R(increment,input){
+	var output = "";
+	var neww = input.split("");
+	for(var i = 0;i<neww.length;i++){
+		console.log("yout")
+		for(var b = 0;b<stringrandom.length;b++){
+			if(neww[i] === stringrandom[b]){
+				console.log(neww[i],stringrandom[b])
+				console.log("yas")
+				increment = increment-increment-increment;
+				while(increment > 25){
+		          increment = increment-25
+		        }
+		        while(increment < -25){
+		          increment = increment+25
+		        }
+		        console.log(increment + "poose")
+		        if(i+increment > 25){ 
+		          var difference = b+increment-25
+		          output = ouput+stringrandom[difference]
+		        }else if(b + increment <-0){
+
+		          var difference = b + increment
+		          output = output + stringrandom[25+difference]
+		        }else{
+		          output = output+stringrandom[b+increment]
+		        }
+
+
+			}
+		}
+	}
+}
+function S(increment,input)
+function C(increment,input){
 	var output = ""
 	console.log(increment,input)
 	var neww = input.split("");
@@ -66,6 +102,7 @@ function R(increment,input){
 			if(neww[i] === one[b]){
 				console.log(neww[i],one[b])
 				console.log("yas")
+				increment = increment-increment-increment;
 				while(increment > 25){
 		          increment = increment-25
 		        }
