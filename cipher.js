@@ -21,65 +21,26 @@ var keyss = []
 var a = ""
 var b = "";
 var c = "";
+
+
+
+
+console.log(decryption)
 if(decryption == "decrypt"){
 
-  decryption()
-    
+  test()
+  my_decryption()
+  
   }else if(decryption == "encrypt"){
   var input = prompt("what message would you like to encrypt?")
   run()
 }
 var extras = false;
-function cipher(inputs){
-  var newInput = inputs.split("")
-  var randomincrement = Math.ceil(Math.random()*99)
-  var rand = randomincrement
-  while(randomincrement > 26){
-          randomincrement = randomincrement-26
-          console.log("I'm going through a for loop")
-        }
-  for(var i = 0;i<newInput.length;i++){
-    for(var z = 0;z<extra.length;z++){
-      if(newInput[i] === extra[z]){
-        extras = true
-        break;
-      }
-    }
-    if(extras == true){
-      output = output + newInput[i]
-      extras = false
-    }else{
-      for(var b = 0;b<one.length;b++){
-      if(newInput[i] === one[b]){
-        console.log(newInput[i],one[b])
-        console.log(randomincrement)
-        while(randomincrement >= 25){
-          randomincrement = randomincrement-25
-        }
-        while(randomincrement < -25){
-          randomincrement = randomincrement+25
-        }
-        if(b+randomincrement >= 25){ 
-          var difference = b+randomincrement-25
-          rand = difference
-          output = output+two[difference]
-        }else if(b + randomincrement <-0){
 
-          var difference = i + randomincrement
-          output = output + two[25+difference]
-        }else{
-          rand = b+randomincrement
-          output = output+two[b+randomincrement]
-        }
-      }
-    }
-    }
-    
-  }
-  key.push("C");
-  console.log(key)
-  key.push(rand)
-  return(output)
+function cipher(inputs){
+  var veryrandomnumber = Math.floor(Math.random()*100);
+  return(ciphers())
+
 }
 function run(){
   output = cipher(input);
@@ -173,14 +134,14 @@ function ciphers(inputs,increment){
         console.log(randomincrement + "poose")
         console.log("l")
         if(i+randomincrement > 25){ 
-          var difference = i+randomincrement-25
+          var difference = b+randomincrement-25
           newout = newout+two[difference]
-        }else if(i + randomincrement <-0){
+        }else if(b + randomincrement <-0){
 
-          var difference = i + randomincrement
+          var difference = b + randomincrement
           newout = newout + two[25+difference]
         }else{
-          newout = newout+two[i+randomincrement]
+          newout = newout+two[b+randomincrement]
         }
       }
     }

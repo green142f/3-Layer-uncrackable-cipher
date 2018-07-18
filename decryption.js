@@ -1,20 +1,99 @@
 
-function decryption(){
+function test() {
+	console.log("hello")
+}
+
+function my_decryption(){
 	var encryptedmessage = prompt("what is your encrypted message?");
 	var encryptedkey = prompt("what is your key?")
-	encryptedkey.split("");
+	var index;
+	var indexkeys = [];
+	var letterkeys = [];
+
+	encryptedkey = encryptedkey.split(",");
+	
 	encryptedmessage.split("")
+	console.log(encryptedmessage)
+	console.log("youdiafifhaihdiafhdifhidahfiahdfiahdifhadihelaktlhekhthehtingsthahttheth")
 	for(var i = 0;i<encryptedkey.length;i++){
-		if(encryptedmessage[i] == ","){
-			encryptedmessage.splice(i,1);
+		console.log(i)
+		console.log(encryptedkey)
+		if(encryptedkey[i] == ""){
+			console.log("wut")
+			console.log(encryptedkey)
+			encryptedkey.splice(i,1);
+			i = i-1
+		}else if(isNaN(encryptedkey[i]) == true){
+			indexkeys.push(i);
+			indexkeys.push(encryptedkey[i])
 		}
 	}
-	
+	for(var i = encryptedkey.length-1;i>=0;i--){
+		if(isNaN(encryptedkey[i]) == true){
+
+			letterkeys.push(encryptedkey.splice(i,encryptedkey.length-i));
+			i=encryptedkey.length;
+			console.log("hii")
+		}
+	}	
+	// letterkeys.splice(0,1)
+	// letterkeys.push(encryptedkey)
+	console.log(encryptedkey)
+	console.log(letterkeys)
+	for(var i = 0;i<letterkeys.length;i++){
+		var currentkey = letterkeys[i][0];
+		if(currentkey == "R"){
+			console.log("!")
+			R(parseInt(letterkeys[i][1]),encryptedmessage)
+			console.log(encryptedmessage)
+
+		}else if(currentkey = "S"){
+
+		}else if(currentkey == "C"){
+
+		}
+	}
 }
 
 
+function R(increment,input){
+	var output = ""
+	console.log(increment,input)
+	var neww = input.split("");
+	for(var i = 0;i<neww.length;i++){
+		console.log("yout")
+		for(var b = 0;b<one.length;b++){
+			if(neww[i] === one[b]){
+				console.log(neww[i],one[b])
+				console.log("yas")
+				while(increment > 25){
+		          increment = increment-25
+		        }
+		        while(increment < -25){
+		          increment = increment+25
+		        }
+		        console.log(increment + "poose")
+		        if(i+increment > 25){ 
+		          var difference = b+increment-25
+		          output = ouput+two[difference]
+		        }else if(b + increment <-0){
 
-  // if(randomincrement == )
+		          var difference = b + increment
+		          output = output + two[25+difference]
+		        }else{
+		          output = output+two[b+increment]
+		        }
+
+
+			}
+		}
+	}
+	console.log(output)
+	console.log("hi")
+	encryptedmessage = output;
+}
+
+  // if(increment == )
   // keyss = keyss.split(",");
   // for(var i = 0;i<keyss.length;i++){
   //   if(keyss[i] == ""){
